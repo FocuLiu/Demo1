@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>css3 hover</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box}
+        .demo,.img,.mask,.border{width: 300px;height: 300px}
+        .demo{position: relative;display: inline-block;margin: 50px auto}
+        .img{border-radius: 50%;background-repeat: no-repeat;background-size:cover;background-position:center;}
+        .mask{position: absolute;top: 0;left: 0;border-radius: 50%;text-align: center;color:rgba(255,255,255,0);line-height: 300px;
+            transition:all .5s ease-in;}
+        .border{border: 10px solid #072256;border-left-color:#E07514;border-top-color:#E07514;position: absolute;top: 0;left: 0;
+            border-radius: 50%;transition:all 0.5s ease-in-out }
+        .demo:hover .mask{background: rgba(0,0,0,0.5);color:rgba(255,255,255,1);}
+        .demo:hover .border{transform: rotate(180deg)}
+    </style>
+</head>
+<body>
+<a href="javascript:void(0)" class="demo">
+    <div class="img" style="background-image:url(http://ww3.sinaimg.cn/mw690/9c7cd2cdjw1e60hntjcq2j211y0lcq5e.jpg)"></div>
+    <div class="mask">
+        <p>welcome to</p>
+    </div>
+    <div class="border"></div>
+</a>
+</body>
+</html>
